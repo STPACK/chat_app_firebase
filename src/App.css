@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+.app__container{
+    width: 720px;
+    margin: 0 auto;
+    overflow-y: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__container header{
+    background-color: #15202b;
+    width: 100%;
+    max-width: 720px;
+    height: 10vh;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__nav{
+    display: flex;
+    color: #fff;
+    align-self: center;
+    justify-content: space-between;
+}
+.nav__content{
+    display: flex;
+    align-items: center;
+}
+.nav__avatar{
+    width: 45px;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.main__container{
+    background-color: #253341;
+    margin-top: 10vh;
+    height: 90vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.spinner__loading{
+    align-self: center;
+    font-size: 2rem;
+   
+}
+.spinner__loading div{
+    width: 15rem;
+    height: 16rem;
 }
 
-.App-link {
-  color: #61dafb;
+.signIn__container
+{
+    display: block;
+    text-align: center;
+    color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-signout{
+    background-color: #dc9518;
+    align-self: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+.button-signout:hover{
+    background-color: #e4b563;
+}
+.button-login{
+    color: #fff;
+    background-color: #dc9518;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    transition: 0.8s;
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+.button-login:hover{
+    background-color: #F9E7C8;
+    color: #253341;
+}
+
+@media (max-width:720px){
+    .app__container{
+        width: 100%;
+        margin: 0 auto;
+    }
 }

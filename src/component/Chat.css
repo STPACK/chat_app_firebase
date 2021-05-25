@@ -1,0 +1,76 @@
+.main__container-chat {
+  /* background-color: #253341; */
+  margin-top: 10vh;
+  display: flex;
+  flex-flow: column;
+  height: 90vh;
+}
+.message__container {
+  background-color: #253341;
+  padding: 0 20px;
+  height: 90%;
+  overflow-y: scroll;
+}
+.message__container::-webkit-scrollbar {
+  width: .2rem;
+}
+
+.message__container::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+  
+  .message__container::-webkit-scrollbar-thumb {
+    background: #dc9518;
+  }
+
+.messageBox__container {
+  background-color: rgb(58, 58, 58);
+  height: 10%;
+  width: 100%;
+  max-width: 720px;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+.messageBox__container form {
+  display: flex;
+  align-self: center;
+}
+
+.messageBox-input {
+  padding: 10px;
+  resize: none;
+  background: rgb(58, 58, 58);
+  color: #fff;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.button-messageBox {
+  background-color: rgb(109, 105, 105);
+  width: 15%;
+  border: none;
+  outline: none;
+  height: 10vh;
+}
+
+.sent-icon{
+  width: 45px;
+  height: auto;
+}
+
+
+
+@media (max-width:720px){
+  .sent-icon{
+    width: 30px;
+    height: auto;
+  }
+  .message__container {
+    padding: 0 1%;
+  }
+  
+}

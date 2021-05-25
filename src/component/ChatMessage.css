@@ -1,0 +1,85 @@
+.chatMessage {
+  display: flex;
+  flex-flow: row;
+  margin: 25px 0;
+}
+.chatMessage-img {
+  width: auto;
+  height: 45px;
+  border-radius: 50%;
+}
+.chatMessage-text {
+  display: flex;
+  flex-flow: column;
+  margin:0 12px;
+  color: #fff;
+}
+.chatMessage-text-title {
+  display: flex;
+  flex-flow: row;
+  align-items: baseline;
+}
+
+.chatMessage-text-title p {
+  font-size: 1rem;
+  max-width: 450px;
+  white-space: nowrap;
+ text-overflow: ellipsis;
+ -o-text-overflow: ellipsis;
+ -ms-text-overflow: ellipsis;
+ overflow: hidden;
+}
+
+.chatMessage-text-title span {
+  margin:0 10px;
+  font-size: 0.7rem;
+  color: rgb(182, 178, 178);
+}
+
+.chatMessage-text-text {
+  max-width: 550px;
+  word-wrap: break-word;
+  width: fit-content;
+  margin-top: 10px;
+  border-radius: 30px;
+  padding: 8px 15px;
+  background-color: rgba(130, 153, 177, 0.5);
+}
+
+
+
+.sent {
+  flex-direction: row-reverse;
+}
+
+.sent img{
+    display: none;
+}
+.sent .chatMessage-text{
+  margin: 0;
+}
+
+.sent div .chatMessage-text-title p {
+    display: none;
+}
+
+.sent div .chatMessage-text-title {
+  flex-direction: row-reverse;
+}
+.sent div .chatMessage-text-text {
+  align-self: flex-end;
+}
+
+
+
+@media (max-width:720px){
+  .chatMessage-text-title p {
+    font-size: 1rem;
+    max-width: 50%;
+  }
+  .chatMessage-text-text {
+    max-width: 80vw;
+   
+  }
+  
+}
